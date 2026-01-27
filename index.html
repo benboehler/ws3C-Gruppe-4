@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Candlewick</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -27,7 +28,6 @@
             <a class="navbar-item">
                 Customizer
             </a>
-
             <a class="navbar-item">
                 Collections
             </a>
@@ -35,15 +35,30 @@
     </div>
 </nav>
 <section class="section">
-    <div class="container has-text-centered">
-        <h1 class="title">
-            Hello World
-        </h1>
-        <p class="subtitle">
-            My first website with
-            <strong class="has-text-primary">Bulma</strong>!
-        </p>
-    </div>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-6">
+                        <h1 class="title">Custom Candle Creator</h1>
+                        <p class="subtitle">
+                            Unleash your creativity and personalize your perfect candle!
+                        </p>
+                        <a class="button is-primary" href="#builder">
+                            Create your candle
+                        </a>
+                    </div>
+                    <div class="column is-6">
+                        <div class="candle-image">
+                            <img src="images/candle-glow.png" alt="Candle glow" class="candle-glow">
+                            <img src="images/normal candle.svg" alt="Candle default" class="img-default">
+                            <img src="images/joke candle.svg" alt="Candle hover" class="img-hover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 </body>
 </html>
