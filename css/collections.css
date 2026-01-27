@@ -1,0 +1,140 @@
+
+/*Collections*/
+
+.collaboration-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 20px 10px;
+    justify-content: center;
+    scrollbar-width: none;
+}
+@media screen and (max-width: 1024px) {
+    .collaboration-carousel {
+        justify-content: flex-start;
+    }
+}
+
+.collaboration-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Base Card Styling */
+.collab-card {
+    flex-shrink: 0;
+    width: 140px;
+    height: 160px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1rem;
+    border: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+    flex: 0 0 140px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.collab-card:hover {
+    border-color: #ffd1dc;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.simpsons {
+    background: radial-gradient(circle, #fff9e6 0%, #ffd1dc 100%);
+    color: black;
+}
+.simpsons:hover, .simpsons.is-active {
+    border-color: #FFB6C1;
+}
+
+.fortnite {
+    background: radial-gradient(circle, #2b3a67 0%, #191d32 100%);
+    color: white;
+}
+.fortnite:hover, .fortnite.is-active {
+    border-color: #4C51BF;
+}
+
+.harry-potter {
+    background: radial-gradient(circle, #ede298 0%, #337087 100%);
+    color: #333;
+}
+.harry-potter:hover, .harry-potter.is-active {
+    border-color: #F7D060;
+}
+
+.stranger-things {
+    background: radial-gradient(circle, #7a1f1f 0%, #1b0101 100%);
+    color: white;
+}
+.stranger-things:hover, .stranger-things.is-active {
+    border-color: #E11D48;
+}
+
+.pokemon {
+    background: radial-gradient(circle, #ffd012 0%, #bf9d13 100%);
+    color: black;
+}
+.pokemon:hover, .pokemon.is-active {
+    border-color: #FFDE00;
+}
+.fhnw {
+    background: linear-gradient(to bottom, #ffd012, #ffd012);
+    color: black;
+}
+.fhnw:hover, .fhnw.is-active {
+    border-color: #000000;
+}
+
+.image-container {
+    background-color: #e0e0e0;
+    position: relative;
+    padding: 1.5rem; /* Reduced padding from 2rem to keep candle size sensible */
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1 / 1; /* Forces the gray box to stay square */
+}
+
+.image-container img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.best-seller-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #e28d9d !important;
+    color: white !important;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.add-to-cart {
+    border: 1px solid #333;
+    border-radius: 0;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #f1f0eb;
+    border-color: #000;
+}
+
+.candle-item .title {
+    font-weight: 500;
+    margin-top: 1.5rem;
+}

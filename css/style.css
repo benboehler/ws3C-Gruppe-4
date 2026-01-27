@@ -13,69 +13,7 @@
     --bulma-control-focus-shadow-l: 50%;
 }
 
-/*Collections*/
-/* Container for horizontal scrolling */
-.collaboration-carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 1.5rem;
-    padding: 20px 10px;
-    justify-content: center; /* Center cards if they don't overflow */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-}
 
-.collaboration-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome/Safari */
-}
-
-/* Base Card Styling */
-.collab-card {
-    min-width: 140px;
-    height: 160px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1rem;
-}
-
-.collab-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Specific Brand Gradients */
-.simpsons {
-    background: radial-gradient(circle, #fff9e6 0%, #ffd1dc 100%);
-    color: black;
-}
-
-.fortnite {
-    background: linear-gradient(135deg, #2b3a67 0%, #191d32 100%);
-    color: white;
-}
-
-.harry-potter {
-    background: #fdfbf2;
-    color: #333;
-}
-
-.stranger-things {
-    background: linear-gradient(to bottom, #4a1010, #1a1a1a);
-    color: white;
-}
-
-.pokemon {
-    background: linear-gradient(to bottom, #ede298, #baac53);
-    color: white;
-}
-
-.fhnw {
-    background: linear-gradient(to bottom, #4a1010, #1a1a1a);
-    color: white;
-}
 
 /* Icon placement */
 .icon-wrap {
