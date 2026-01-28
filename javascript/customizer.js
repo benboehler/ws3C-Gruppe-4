@@ -1,19 +1,67 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tabs li');
     const tabContents = document.querySelectorAll('.tab-content');
+    const buttonBack = document.querySelector('.button-back');
+    const buttonNext = document.querySelector('.button-next');
 
-    tabs.forEach(tab => {
+    let currentIndex = 0;
+
+    tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => {
-            tabs.forEach(t => t.classList.remove('is-active'));
-            tab.classList.add('is-active');
-
-            tabContents.forEach(content => content.classList.add('is-hidden'));
-
-            const target = tab.getAttribute('data-tab');
-            const targetContent = document.getElementById(target);
-            if (targetContent) {
-                targetContent.classList.remove('is-hidden');
-            }
+            updateTabVisibility(index);
         });
     });
+
+    if (buttonBack) {
+        buttonBack.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                updateTabVisibility(currentIndex - 1);
+            }
+        });
+    }
+
+    if (buttonNext) {
+        buttonNext.addEventListener('click', () => {
+            if (currentIndex < tabs.length - 1) {
+                updateTabVisibility(currentIndex + 1);
+            }
+        });
+    }
+
+    function updateTabVisibility(index) {
+        // Update active tab
+        tabs.forEach((t, i) => {
+            if (i === index) {
+                t.classList.add('is-active');
+            } else {
+                t.classList.remove('is-active');
+            }
+        });
+
+        // Update tab contents
+        tabContents.forEach((content, i) => {
+            if (i === index) {
+                content.classList.remove('is-hidden');
+            } else {
+                content.classList.add('is-hidden');
+            }
+        });
+
+        // Update buttons visibility
+        if (index === 0) {
+            buttonBack.classList.add('is-hidden');
+        } else {
+            buttonBack.classList.remove('is-hidden');
+        }
+
+        if (index === tabs.length - 1) {
+            buttonNext.classList.add('is-hidden');
+        } else {
+            buttonNext.classList.remove('is-hidden');
+        }
+
+        currentIndex = index;
+    }
+    
+    updateTabVisibility(0);
 });
