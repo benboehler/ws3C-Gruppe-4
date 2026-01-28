@@ -1,0 +1,29 @@
+.customizer-main-grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.candle-cell {
+    margin-left: 4rem;
+}
+
+.customizer-box-cell {
+    margin-right: 4rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .candle-cell {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .customizer-box-cell {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.button-cart {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
