@@ -27,3 +27,11 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.button-next {
+    margin-left: 5rem;
+}
+
+.button-back {
+    margin-right: 5rem;
+}
