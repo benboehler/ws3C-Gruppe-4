@@ -57,71 +57,82 @@
             <div class="box">
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="is-active">
+                        <li class="is-active" data-tab="tab-color">
                             <a>
                                 <img src="../images/Icon_Color.svg" alt="Icon Color">
                             </a>
                         </li>
-                        <li>
+                        <li data-tab="tab-scent">
                             <a>
                                 <img src="../images/Icon_Scent.svg" alt="Icon Scent">
                             </a>
                         </li>
-                        <li>
+                        <li data-tab="tab-wick">
                             <a>
                                 <img src="../images/Icon_Wick.svg" alt="Icon Wick">
                             </a>
                         </li>
-                        <li>
+                        <li data-tab="tab-text">
                             <a>
                                 <img src="../images/Icon_Text.svg" alt="Icon Text">
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="fixed-grid has-2-cols-mobile has-4-cols">
-                    <div class="grid has-text-centered">
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Lemon Icing.svg" alt="Lemon Icing"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Nimbus Cloud.svg" alt="Nimbus Cloud"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Raindrops on Roses.svg" alt="Raindrops on Roses"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Cloud Dancer.svg" alt="Cloud Dancer"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Ice Melt.svg" alt="Ice Melt"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Peach Dust.svg" alt="Peach Dust"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Almost Aqua.svg" alt="Almost Aqua"/>
-                            </figure>
-                        </div>
-                        <div class="cell">
-                            <figure class="image is-128x128 is-inline-block">
-                                <img src="../images/Box_Orchid Tint.svg" alt="Orchid Tint"/>
-                            </figure>
+                <div id="tab-color" class="tab-content">
+                    <div class="fixed-grid has-2-cols-mobile has-4-cols">
+                        <div class="grid has-text-centered">
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Lemon Icing.svg" alt="Lemon Icing"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Nimbus Cloud.svg" alt="Nimbus Cloud"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Raindrops on Roses.svg" alt="Raindrops on Roses"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Cloud Dancer.svg" alt="Cloud Dancer"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Ice Melt.svg" alt="Ice Melt"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Peach Dust.svg" alt="Peach Dust"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Almost Aqua.svg" alt="Almost Aqua"/>
+                                </figure>
+                            </div>
+                            <div class="cell">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img src="../images/Box_Orchid Tint.svg" alt="Orchid Tint"/>
+                                </figure>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div id="tab-scent" class="tab-content is-hidden">
+                    <p>Scent options</p>
+                </div>
+                <div id="tab-wick" class="tab-content is-hidden">
+                    <p>Wick options</p>
+                </div>
+                <div id="tab-text" class="tab-content is-hidden">
+                    <p>Text options</p>
                 </div>
             </div>
             <button class="button is-light is-medium button-back">< Back</button>
@@ -141,4 +152,5 @@
         </p>
     </div>
 </footer>
+<script src="../javascript/customizer.js"></script>
 </html>

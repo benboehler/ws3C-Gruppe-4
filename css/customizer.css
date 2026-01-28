@@ -35,3 +35,7 @@
 .button-back {
     margin-right: 5rem;
 }
+
+.is-hidden {
+    display: none !important;
+}
