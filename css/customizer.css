@@ -64,3 +64,23 @@
     height: 252px;
     width: 224px;
 }
+
+.preview-container {
+    position: relative;
+}
+
+#candle-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#scent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
