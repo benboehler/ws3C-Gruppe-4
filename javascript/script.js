@@ -12,14 +12,14 @@ const collaborationData = {
             {
                 title: "Duffer Beer Breeze",
                 desc: "hops + citrus",
-                price: "9.50",
+                price: "11.00",
                 svg: "../images/simpsons-2.svg",
                 tag: ""
             },
             {
                 title: "Springfield Summer",
                 desc: "cut grass + flowers",
-                price: "9.50",
+                price: "11.00",
                 svg: "../images/simpsons-3.svg",
                 tag: ""
             }
@@ -33,14 +33,14 @@ const collaborationData = {
                 desc: "grapefruit + lemon zest",
                 price: "12.50",
                 svg: "../images/fortnite-1.svg",
-                tag: "limited"
+                tag: ""
             },
             {
                 title: "Chug Jug Chill",
                 desc: "blueberry + mint",
                 price: "11.00",
                 svg: "../images/fortnite-2.svg",
-                tag: ""
+                tag: "bestseller"
             },
             {title: "Llama Loot", desc: "tropical fruit", price: "11.00", svg: "../images/fortnite-3.svg", tag: ""}
         ]
@@ -51,9 +51,9 @@ const collaborationData = {
             {
                 title: "Butterbeer",
                 desc: "butterscotch + vanilla",
-                price: "12.50",
+                price: "11.00",
                 svg: "../images/harrypotter-1.svg",
-                tag: "limited"
+                tag: ""
             },
             {
                 title: "Forbidden Forest",
@@ -77,16 +77,16 @@ const collaborationData = {
             {
                 title: "Upside Down",
                 desc: "dark woods + ash",
-                price: "12.50",
+                price: "11.00",
                 svg: "../images/strangerthings-1.svg",
-                tag: "limited"
+                tag: ""
             },
             {
                 title: "Scoops Ahoy",
                 desc: "ice cream + strawberry",
-                price: "11.00",
+                price: "12.50",
                 svg: "../images/strangerthings-2.svg",
-                tag: ""
+                tag: "limited"
             },
             {
                 title: "Running Up That Hill",
