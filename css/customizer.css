@@ -39,3 +39,8 @@
 .is-hidden {
     display: none !important;
 }
+
+.color-button.is-selected {
+    border: 2px solid #000;
+    background-color: #f5f5f5;
+}

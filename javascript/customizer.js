@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (colorButtons && candlePreview) {
         colorButtons.forEach(button => {
             button.addEventListener('click', () => {
+                colorButtons.forEach(btn => btn.classList.remove('is-selected'));
+                button.classList.add('is-selected');
+
                 const color = button.getAttribute('data-color');
                 candlePreview.src = `../images/Candle_${color}.svg`;
             });
