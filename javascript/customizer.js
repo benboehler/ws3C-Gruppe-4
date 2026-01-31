@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonNext = document.querySelector('.button-next');
     const colorButtons = document.querySelectorAll('.color-button');
     const candlePreview = document.getElementById('candle-preview');
+    const scentButtons = document.querySelectorAll('.scent-button');
 
     let currentIndex = 0;
 
@@ -38,6 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const color = button.getAttribute('data-color');
                 candlePreview.src = `../images/Candle_${color}.svg`;
+            });
+        });
+    }
+
+    if (scentButtons && candlePreview) {
+        scentButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                scentButtons.forEach(btn => btn.classList.remove('is-selected'));
+                button.classList.add('is-selected');
+
+                const scent = button.getAttribute('data-scent');
+                candlePreview.src = `../images/Candle_${scent}.svg`;
             });
         });
     }

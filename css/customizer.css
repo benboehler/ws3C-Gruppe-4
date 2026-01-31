@@ -44,3 +44,13 @@
     border: 2px solid #000;
     background-color: #f5f5f5;
 }
+
+.scent-button.is-selected {
+    border: 2px solid #000;
+    background-color: #f5f5f5;
+}
+
+.image.is-144x128 {
+    height: 144px;
+    width: 128px;
+}
