@@ -102,16 +102,23 @@
 .image-container {
     background-color: #e0e0e0;
     position: relative;
-    padding: 1.5rem; /* Reduced padding from 2rem to keep candle size sensible */
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
-    aspect-ratio: 1 / 1; /* Forces the gray box to stay square */
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    align-items: center;
 }
 
 .image-container img {
+    transition: transform 0.4s ease;
     max-height: 100%;
     width: auto;
     object-fit: contain;
+}
+
+.candle-item:hover .image-container img {
+    transform: scale(1.05);
 }
 
 .best-seller-tag {
