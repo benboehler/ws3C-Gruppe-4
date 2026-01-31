@@ -59,3 +59,8 @@
     height: 144px;
     width: 128px;
 }
+
+.image.is-216x192 {
+    height: 252px;
+    width: 224px;
+}
