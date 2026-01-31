@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabContents = document.querySelectorAll('.tab-content');
     const buttonBack = document.querySelector('.button-back');
     const buttonNext = document.querySelector('.button-next');
+    const colorButtons = document.querySelectorAll('.color-button');
+    const candlePreview = document.getElementById('candle-preview');
 
     let currentIndex = 0;
 
@@ -25,6 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentIndex < tabs.length - 1) {
                 updateTabVisibility(currentIndex + 1);
             }
+        });
+    }
+
+    if (colorButtons && candlePreview) {
+        colorButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const color = button.getAttribute('data-color');
+                candlePreview.src = `../images/Candle_${color}.svg`;
+            });
         });
     }
 
