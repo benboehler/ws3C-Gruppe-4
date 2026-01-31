@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonBack = document.querySelector('.button-back');
     const buttonNext = document.querySelector('.button-next');
     const colorButtons = document.querySelectorAll('.color-button');
-    const candlePreview = document.getElementById('candle-preview');
     const scentButtons = document.querySelectorAll('.scent-button');
+    const wickButtons = document.querySelectorAll('.wick-button');
+    const candlePreview = document.getElementById('candle-preview');
 
     let currentIndex = 0;
 
@@ -51,6 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const scent = button.getAttribute('data-scent');
                 candlePreview.src = `../images/Candle_${scent}.svg`;
+            });
+        });
+    }
+
+    if (wickButtons && candlePreview) {
+        wickButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                wickButtons.forEach(btn => btn.classList.remove('is-selected'));
+                button.classList.add('is-selected');
+
+                const wick = button.getAttribute('data-wick');
+                candlePreview.src = `../images/Candle_${wick}.svg`;
             });
         });
     }
