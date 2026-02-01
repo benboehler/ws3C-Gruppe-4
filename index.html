@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -32,6 +33,14 @@
                 Collections
             </a>
         </div>
+        <div class="navbar-end">
+            <a class="navbar-item cart-link" href="cart/index.html">
+                <span class="cart-icon">
+                <img src="images/shopping_Cart.svg" alt="Shopping cart">
+                </span>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
     </div>
 </nav>
 <section class="section">
@@ -51,6 +60,11 @@
                     <div class="column is-6">
                         <div class="candle-scene">
                             <img src="images/candle-glow.png" alt="Candle glow" class="candle-glow">
+
+                            <img src="images/Farben.svg" class="candle-icon icon-color" alt="Color">
+                            <img src="images/Scent.svg" class="candle-icon icon-scent" alt="Scent">
+                            <img src="images/Docht.svg" class="candle-icon icon-wick" alt="Wick">
+                            <img src="images/Text.svg" class="candle-icon icon-text" alt="Text">
                                 <div class="candle-image">
                                      <img src="images/candle-default.svg" alt="Candle default" class="img-default">
                                      <img src="images/joke_candle.svg" alt="Candle hover" class="img-hover">
@@ -63,5 +77,28 @@
     </section>
 </section>
 <script src="javascript/navbar.js"></script>
+<script src="javascript/cart.js"></script>
+<!-- Cart overlay -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- Cart panel -->
+<aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose">✕</button>
+    </div>
+
+    <div class="cart-content">
+        <p class="has-text-grey">
+            Your custom candles will appear here ✨
+        </p>
+    </div>
+
+    <div class="cart-footer">
+        <button class="button is-primary is-fullwidth">
+            Checkout
+        </button>
+    </div>
+</aside>
 </body>
 </html>

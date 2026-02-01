@@ -34,6 +34,14 @@
                 Collections
             </a>
         </div>
+        <div class="navbar-end">
+            <a class="navbar-item cart-link" href="#">
+            <span class="cart-icon">
+                <img src="../images/shopping_Cart.svg" alt="Shopping cart">
+            </span>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
     </div>
 </nav>
 <section class="section">
@@ -106,7 +114,31 @@
         </p>
     </div>
 </footer>
+
+<!-- Cart overlay -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- Cart panel -->
+<aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose">✕</button>
+    </div>
+
+    <div class="cart-content">
+        <p class="has-text-grey">
+            Your selected candles will appear here ✨
+        </p>
+    </div>
+
+    <div class="cart-footer">
+        <button class="button is-primary is-fullwidth">
+            Checkout
+        </button>
+    </div>
+</aside>
 <script src="../javascript/navbar.js"></script>
 <script src="../javascript/script.js"></script>
+<script src="../javascript/cart.js"></script>
 </body>
 </html>
