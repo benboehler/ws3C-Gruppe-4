@@ -51,6 +51,7 @@
             <div class="image is-256x256 is-inline-block preview-container">
                 <img id="candle-preview" src="../images/Candle_Lemon-Icing.svg" alt="Candle Preview"/>
                 <img id="scent-overlay" src="../images/Label_Glühwein.svg" alt="Scent Overlay"/>
+                <div id="text-overlay"></div>
                 <button class="button is-black is-medium is-fullwidth button-cart">Add to Cart</button>
             </div>
         </div>
@@ -240,9 +241,10 @@
                     </p>
                     <label>
                         <input
-                                class="input is-medium"
+                                class="input is-medium input-text"
                                 type="text"
-                                placeholder="medium input"
+                                placeholder="max. 25 Zeichen"
+                                maxlength="25"
                         />
                     </label>
                 </div>

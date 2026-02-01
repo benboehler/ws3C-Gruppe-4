@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const colorButtons = document.querySelectorAll('.color-button');
     const scentButtons = document.querySelectorAll('.scent-button');
     const wickButtons = document.querySelectorAll('.wick-button');
+    const inputText = document.querySelectorAll('.input-text');
     const candlePreview = document.getElementById('candle-preview');
     const scentOverlay = document.getElementById('scent-overlay');
+    const textOverlay = document.getElementById('text-overlay');
 
     let currentIndex = 0;
 
@@ -65,6 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const wick = button.getAttribute('data-wick');
                 candlePreview.src = `../images/Candle_${wick}.svg`;
+            });
+        });
+    }
+
+    if (inputText && textOverlay) {
+        inputText.forEach(input => {
+            input.addEventListener('input', () => {
+                textOverlay.textContent = input.value;
             });
         });
     }
