@@ -95,3 +95,13 @@
     font-size: 0.8rem;
     word-wrap: break-word;
 }
+
+.tabs img {
+    height: 4rem;
+}
+
+.tabs li.is-active a {
+    background-color: #F1F2F1 !important;
+    border-color: #F1F2F1 !important;
+    color: #fff !important;
+}
