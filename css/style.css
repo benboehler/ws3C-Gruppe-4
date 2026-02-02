@@ -88,6 +88,10 @@ body {
     background: transparent;
 }
 
+.navbar-burger {
+    color: #000000 !important;
+}
+
 .navbar-item {
     color: var(--accent);
     font-weight: 500;
