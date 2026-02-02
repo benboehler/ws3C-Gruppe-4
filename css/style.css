@@ -466,9 +466,6 @@ body {
         display: block;
         margin: 0 auto;
     }
-    .img-hover {
-        display: none;
-    }
 
     .candle-image {
         max-width: 240px;
