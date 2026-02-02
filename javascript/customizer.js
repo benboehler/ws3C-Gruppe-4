@@ -59,14 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (wickButtons && candlePreview) {
+    if (wickButtons) {
         wickButtons.forEach(button => {
             button.addEventListener('click', () => {
                 wickButtons.forEach(btn => btn.classList.remove('is-selected'));
                 button.classList.add('is-selected');
-
-                const wick = button.getAttribute('data-wick');
-                candlePreview.src = `../images/Candle_${wick}.svg`;
             });
         });
     }
