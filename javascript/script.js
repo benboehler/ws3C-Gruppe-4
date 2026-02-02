@@ -111,6 +111,14 @@ function renderProducts(brand) {
     document.getElementById('collab-title').innerText = data.header.title;
     document.getElementById('collab-subtitle').innerText = data.header.subtitle;
 
+    const subtitleElement = document.getElementById('collab-subtitle');
+    subtitleElement.innerText = data.header.subtitle;
+
+    if (brand === 'strangerthings') {
+        subtitleElement.classList.add('upside-down-text');
+    } else {
+        subtitleElement.classList.remove('upside-down-text');
+    }
     // 2. Update Product Grid
     const productGrid = document.getElementById('product-grid');
     productGrid.innerHTML = '';

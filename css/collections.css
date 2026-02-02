@@ -80,25 +80,11 @@
 .stranger-things:hover, .stranger-things.is-active {
     border-color: #E11D48;
 }
-
-.pokemon {
-    background: radial-gradient(circle, #e3d088 0%, #caa82f 100%);
-    color: black;
+.upside-down-text {
+    display: inline-block;
+    transform: scale(-1, -1);
+    color: #e11d48;
 }
-
-.pokemon:hover, .pokemon.is-active {
-    border-color: #FFDE00;
-}
-
-.fhnw {
-    background: linear-gradient(to bottom, #ffd012, #ffd012);
-    color: black;
-}
-
-.fhnw:hover, .fhnw.is-active {
-    border-color: #000000;
-}
-
 .image-container {
     background-color: #e0e0e0;
     position: relative;
