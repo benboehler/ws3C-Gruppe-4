@@ -294,10 +294,7 @@ body {
 
 .img-default,
 .img-hover {
-    position: absolute;
-    inset: 0;
     transform: rotate(15deg);
-    transform-origin: center;
 }
 
 /* hover */
@@ -464,25 +461,59 @@ body {
     }
 
     .candle-image {
-        max-width: 240px;
-        margin-top: 1.5rem;
-    }
-
-    .candle-wrapper {
-        width: 200px;
+        width: 220px;
+        height: 300px;
+        margin: 0 auto;
     }
 
     .candle-scene {
         width: 240px;
         height: 420px;
+        margin: 0 auto;
     }
 
+    /* Candle */
+    .img-default,
+    .img-hover {
+        transform: rotate(10deg);
+    }
 
     .candle-glow {
-        width: 150%;
-        top: -40%;
+        width: 120%;
+        top: -10%;
+        left: 10%;
+        transform:
+                translateX(0)
+                rotate(30deg)
+                scale(1.2);
+
     }
 
+    .candle-icon {
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+    }
+
+    .icon-color {
+        top: 30%;
+        left: -5%;
+    }
+
+    .icon-scent {
+        top: 5%;
+        right: 10%;
+    }
+
+    .icon-wick {
+        top: 45%;
+        right: -10%;
+    }
+
+    .icon-text {
+        bottom: 80%;
+        left: 18%;
+    }
 }
 
 
