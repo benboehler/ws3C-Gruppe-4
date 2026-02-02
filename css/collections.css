@@ -45,6 +45,12 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
+.custom-divider {
+    background-color: #888888;
+    height: 1px;
+    opacity: 0.5;
+}
+
 .simpsons {
     background: radial-gradient(circle, #fff9e6 0%, #ffd1dc 100%);
     color: black;
@@ -86,7 +92,7 @@
     color: #e11d48;
 }
 .image-container {
-    background-color: #e0e0e0;
+    background-color: #f4f4ee;
     position: relative;
     padding: 1.5rem;
     display: flex;
@@ -127,10 +133,11 @@
     padding: 0 1.5rem;
     font-weight: bold;
     transition: background 0.2s;
+    background-color: #f4f4ee;
 }
 
 .add-to-cart:hover {
-    background-color: #f1f0eb;
+    background-color: #eaeae1;
     border-color: #000;
 }
 
